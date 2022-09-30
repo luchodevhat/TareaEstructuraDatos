@@ -11,4 +11,5 @@ package tarea1_estructuradatos;
  */
 public class Binarios {
     int j;
+    int k;
 }
