@@ -10,5 +10,5 @@ package tarea1_estructuradatos;
  * @author Kendal Angulo
  */
 public class Binarios {
-    
+    int j;
 }
