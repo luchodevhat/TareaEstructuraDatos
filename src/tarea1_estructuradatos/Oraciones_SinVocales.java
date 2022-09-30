@@ -9,5 +9,6 @@ package tarea1_estructuradatos;
  * @author josuevillaes
  */
 public class Oraciones_SinVocales {
+    String casa;
     
 }
