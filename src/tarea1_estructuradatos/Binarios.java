@@ -8,7 +8,7 @@ import java.util.Scanner;
  */
 public class Binarios {
 
-    public boolean binario(int num) {
+    public boolean decBin(int num) {
         if (num == 0 || num == 1
                 || num < 0) {
             return false;
@@ -16,22 +16,10 @@ public class Binarios {
         while (num != 0) {
 
             if (num % 10 > 1) {
-              return false;
+                return decBin(num/10);
             }
             num = num / 10;
         }
         return true;
-    }
-    
-    public boolean binarioR(int num) {
-        if (num == 0 || num == 1
-                || num < 0) {
-            return false;
-        }if (num != 0 && num % 10 != 1) {
-            return true;
-        }else {
-            num = num / 10;
-            return binarioR(num);
-        }
     }
 }

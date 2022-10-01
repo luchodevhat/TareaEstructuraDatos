@@ -34,7 +34,7 @@ public class Tarea1_EstructuraDatos {
         System.out.println("Introduzca su número a convertir:");
         Scanner entrada = new Scanner(System.in);
         int n = entrada.nextInt();
-        if (binarios1.binario(n) == false) {
+        if (binarios1.decBin(n) == false) {
             System.out.println("No es binario");
         }else {
             System.out.println("Es binario");
