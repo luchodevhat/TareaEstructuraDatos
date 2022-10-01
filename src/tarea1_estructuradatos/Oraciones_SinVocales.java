@@ -18,9 +18,7 @@ public class Oraciones_SinVocales {
        
         for (int i = fraseCons.length() - 1; i >= 0; i--) {
              fraseCons.charAt(i);
-        }
-        
-
+        }   
     }
 }
 
