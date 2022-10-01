@@ -1,14 +1,26 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package tarea1_estructuradatos;
 
-/**
- *
- * @author josuevillaes
- */
+import java.util.Scanner;
+
+// a. Elimine las vocales de una oración e imprima la oración resultante.
+
 public class Oraciones_SinVocales {
-    String casa;
-    
+
+    public void Imprime_SinVocales() {
+
+        System.out.println("Digite una frase ");
+        Scanner consola = new Scanner(System.in);
+        String frase = consola.nextLine();
+        System.out.println("La frase sin modificar es: " + frase);
+        String fraseCons = frase.replaceAll("[a,á,e,é,i,í,o,ó,u,ú, A, E, I, O, U,"
+                + "Á, É, Í, Ó, Ú]", "");
+        System.out.println("La frase sin vocales es: " + fraseCons);
+        String fraseInv = "";
+        for (int i = fraseCons.length() - 1; i >= 0; i--) {
+            fraseInv = fraseInv + fraseCons.charAt(i);
+        }
+        System.out.println("La frase invertida y sin vocales es: " + fraseInv);
+
+    }
 }
+
