@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
 package tarea1_estructuradatos;
 
 /**
@@ -10,11 +6,14 @@ package tarea1_estructuradatos;
  */
 public class Tarea1_EstructuraDatos {
 
-    /**
-     * @param args the command line arguments
-     */
+   
     public static void main(String[] args) {
-        // TODO code application logic here
+        Convertir_Codigo test = new Convertir_Codigo();
+        
+        System.out.println("RESULTADO CON RECURSIVIDAD");
+        System.out.println(test.calcExponencialR(5, 3, 0));
+        System.out.println("RESULTADO SIN RECURSIVIDAD");
+        System.out.println(test.calExponencial(5, 3));
+        
     }
-    
 }
