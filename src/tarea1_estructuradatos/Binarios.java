@@ -5,11 +5,26 @@
  */
 package tarea1_estructuradatos;
 
+import java.util.Scanner;
+
 /**
  *
  * @author Kendal Angulo
  */
 public class Binarios {
-    int j;
-    int k;
+    public static void main(String[] args) {
+        System.out.println("Introduzca su número a convertir:");
+        Scanner entrada = new Scanner(System.in);
+        int n = entrada.nextInt();
+        if (n == 0) {
+            System.out.print("Numero no binario");
+            return;
+        } else {
+            int decimalToBinary=(n / 2);
+            System.out.print("Numero binario");
+        }
+    }
 }
+
+   
+
