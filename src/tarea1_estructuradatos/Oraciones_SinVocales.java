@@ -15,11 +15,11 @@ public class Oraciones_SinVocales {
         String fraseCons = frase.replaceAll("[a,á,e,é,i,í,o,ó,u,ú, A, E, I, O, U,"
                 + "Á, É, Í, Ó, Ú]", "");
         System.out.println("La frase sin vocales es: " + fraseCons);
-        String fraseInv = "";
+       
         for (int i = fraseCons.length() - 1; i >= 0; i--) {
-            fraseInv = fraseInv + fraseCons.charAt(i);
+             fraseCons.charAt(i);
         }
-        System.out.println("La frase invertida y sin vocales es: " + fraseInv);
+        
 
     }
 }
