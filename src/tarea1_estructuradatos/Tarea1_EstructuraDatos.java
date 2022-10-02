@@ -19,7 +19,7 @@ public class Tarea1_EstructuraDatos {
         
         // EJERCICIO A)
         System.out.println("");
-        System.out.println("EJERCICIO A)");
+        System.out.println("EJERCICIO A");
         System.out.println("");
         Oraciones_SinVocales sinVocales = new Oraciones_SinVocales(); 
         sinVocales.Imprime_SinVocales();
@@ -34,7 +34,7 @@ public class Tarea1_EstructuraDatos {
         
         // EJERCICIO C)
         System.out.println("");
-        System.out.println("EJERCICIO C)");
+        System.out.println("EJERCICIO C");
         System.out.println("");
         System.out.println("Introduzca su número a convertir:");
         Scanner entrada = new Scanner(System.in);
@@ -47,7 +47,7 @@ public class Tarea1_EstructuraDatos {
         
         // EJERCICIO D)
         System.out.println("");
-        System.out.println("EJERCICIO D)");
+        System.out.println("EJERCICIO D");
         System.out.println("");
         System.out.println("RESULTADO CON RECURSIVIDAD");
         System.out.println(test.calcExponencialR(5, 3, 0));
