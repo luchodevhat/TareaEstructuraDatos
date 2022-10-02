@@ -25,14 +25,13 @@ public class Tarea1_EstructuraDatos {
         sinVocales.Imprime_SinVocales();
         
         // EJERCICIO B)
-        /*
         System.out.println("");
         System.out.println("EJERCICIO B");
         System.out.println("");
         SumaNumNaturales suma = new SumaNumNaturales();
         int total = suma.sumasR(3);
         System.out.println("El total de la suma es: "+ total);
-        */
+        
         // EJERCICIO C)
         System.out.println("");
         System.out.println("EJERCICIO C");
