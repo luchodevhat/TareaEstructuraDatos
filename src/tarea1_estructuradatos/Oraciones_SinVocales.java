@@ -10,13 +10,12 @@ public class Oraciones_SinVocales {
     public void EliminarVocales(String palabra, int posicion) {
 
         palabra = palabra.replace(vocales[posicion], "");
-        palabra = palabra.replace((vocales[posicion]).toUpperCase(), "");
         posicion ++;
 
         if (posicion < 5) {
            EliminarVocales(palabra, posicion);
         } else {
+            System.out.println(palabra);
         }
-        System.out.println(palabra);
     }
 }
