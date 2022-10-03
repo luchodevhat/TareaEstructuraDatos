@@ -7,6 +7,7 @@ public class Oraciones_SinVocales {
 
     String vocales[] = {"a", "e", "i", "o", "u", "A", "E", "I", "O", "U"};
 
+
     public void EliminarVocales(String palabra, int posicion) {
 
         palabra = palabra.replace(vocales[posicion], "");
