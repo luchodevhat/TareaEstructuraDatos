@@ -7,9 +7,7 @@ Josue Villalobos Esquivel
 */
 
 package tarea1_estructuradatos;
-
 import java.util.Scanner;
-
 
 public class Tarea1_EstructuraDatos {
 
@@ -19,19 +17,27 @@ public class Tarea1_EstructuraDatos {
         
         // EJERCICIO A)
         System.out.println("");
-        System.out.println("EJERCICIO A)");
+        System.out.println("EJERCICIO A");
         System.out.println("");
-        Oraciones_SinVocales sinVocales = new Oraciones_SinVocales(); 
-        sinVocales.Imprime_SinVocales();
+        Oraciones_SinVocales sinVocales = new Oraciones_SinVocales();
+        System.out.println("Introduzca oracion:");
+        Scanner palabra = new Scanner(System.in);
+        String r = palabra.nextLine();
+        sinVocales.EliminarVocales(r, 0);
         
         // EJERCICIO B)
-        
+        System.out.println("");
+        System.out.println("EJERCICIO B");
+        System.out.println("");
+        SumaNumNaturales suma = new SumaNumNaturales();
+        int total = suma.sumasR(3);
+        System.out.println("El total de la suma es: "+ total);
         
         // EJERCICIO C)
         System.out.println("");
-        System.out.println("EJERCICIO C)");
+        System.out.println("EJERCICIO C");
         System.out.println("");
-        System.out.println("Introduzca su número a convertir:");
+        System.out.println("Introduzca su número a verificar:");
         Scanner entrada = new Scanner(System.in);
         int n = entrada.nextInt();
         if (binarios1.decBin(n) == false) {
@@ -42,12 +48,12 @@ public class Tarea1_EstructuraDatos {
         
         // EJERCICIO D)
         System.out.println("");
-        System.out.println("EJERCICIO D)");
+        System.out.println("EJERCICIO D");
         System.out.println("");
         System.out.println("RESULTADO CON RECURSIVIDAD");
         System.out.println(test.calcExponencialR(5, 3, 0));
         System.out.println("RESULTADO SIN RECURSIVIDAD");
         System.out.println(test.calExponencial(5, 3));
-        
+
     }
 }

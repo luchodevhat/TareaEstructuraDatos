@@ -5,18 +5,18 @@ import java.util.Scanner;
 // a. Elimine las vocales de una oración e imprima la oración resultante.
 public class Oraciones_SinVocales {
 
-    public void Imprime_SinVocales() {
+    String vocales[] = {"a", "e", "i", "o", "u", "A", "E", "I", "O", "U"};
 
-        System.out.println("Digite una frase ");
-        Scanner consola = new Scanner(System.in);
-        String frase = consola.nextLine();
-        
-        System.out.println("La frase sin modificar es: " + frase);
-        
-        String fraseCons = frase.replaceAll("[a,á,e,é,i,í,o,ó,u,ú, A, E, I, O, U,"
-                + "Á, É, Í, Ó, Ú]", "");
-        System.out.println("La frase sin vocales es: " + fraseCons);
-        
-        String fraseInv = "";
+    public void EliminarVocales(String palabra, int posicion) {
+
+        palabra = palabra.replace(vocales[posicion], "");
+        palabra = palabra.replace((vocales[posicion]).toUpperCase(), "");
+        posicion ++;
+
+        if (posicion < 5) {
+           EliminarVocales(palabra, posicion);
+        } else {
+        }
+        System.out.println(palabra);
     }
 }
